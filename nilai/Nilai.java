@@ -1,4 +1,4 @@
-package nilai:
+package nilai;
 
 import java.util.Scanner;
 
@@ -6,7 +6,7 @@ import java.util.Scanner;
         public static void main(String[] args) {
 
         
-        int nilai;
+        int score;
         String nama, nim, hasil;
         Scanner keyboard = new Scanner(System.in);
         
@@ -18,15 +18,15 @@ import java.util.Scanner;
         System.out.print("NIM : ");
         nim = keyboard.nextLine();
         System.out.print("Nilai : ");
-        nilai = keyboard.nextInt();
+        score = keyboard.nextInt();
         
-        if ( nilai >= 85 ) {
+        if ( score >= 85 ) {
             hasil = "A";
-        } else if ( nilai >= 75 ) {
+        } else if ( score >= 75 ) {
             hasil = "B";
-        } else if ( nilai >= 60 ) {
+        } else if ( score >= 60 ) {
             hasil = "C";
-        } else if ( nilai >= 50 ) {
+        } else if ( score >= 50 ) {
             hasil = "D";
         } else {
             hasil = "E";
